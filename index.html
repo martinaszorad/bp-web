@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Relative Yield Potential Zones</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="nouislider/dist/nouislider.css" rel="stylesheet">
+        <link href="nouislider/dist/nouislider.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        <script type="module" src="semantic/dist/semantic.min.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <script type="module" src="main.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <h1 class="ui header">Relative Yield Potential Zones (%)</h1>
+            <div class="ui fluid search selection dropdown" id="field-choice">
+                <div class="text"></div>
+                <i class="dropdown icon"></i>
+            </div>
+            <img id="map" alt="Map">
+            <img id="legend" alt="Legend" src="img/legend.png">
+            <div id="slider"></div>
+            <div class="ui horizontal divider" id="line"> Data Sources </div>
+            <div class="ui label"><a href="https://geoportal.cuzk.cz/(S(sle2pvifcji2gfb5mes2yd0y))/Default.aspx?menu=3121&mode=TextMeta&side=wms.verejne&metadataID=CZ-CUZK-WMS-ORTOFOTO-P&metadataXSL=metadata.sluzba">ČÚZK</a></div>
+            <div class="ui label"><a href="https://www.usgs.gov/">USGS</a></div>
+            <div class="ui label"><a href="https://eagri.cz/public/app/lpisext/lpis/verejny2/plpis/">LPIS</a></div>
+        </div>
+    </body>
+</html>

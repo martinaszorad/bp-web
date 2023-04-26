@@ -1,0 +1,23 @@
+#content {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#map {
+    width: 800px;
+}
+
+#legend {
+    width: 800px;
+}
+
+#buttons {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#line {
+    margin-top: 50px;
+}
