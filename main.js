@@ -1,8 +1,10 @@
 import noUiSlider from 'nouislider/dist/nouislider.js'
 var slider = document.getElementById('slider');
 var valuesForSlider = Array.from(new Array(23), (x, i) => i + 1991);
-var field = 'hrebla'
-var year = 1991
+
+let params = new URL(document.location).searchParams;
+let field = params.get('field') || 'hrebla';
+let year = params.get('year') || 1991;
 
 var format = {
     to: function(value) {
@@ -53,39 +55,47 @@ $('#field-choice')
       {
         name: 'Hřebla',
         value: 'hrebla',
-        selected: true,
+        selected: field === 'hrebla'
       },
       {
         name: 'Lulečské Díly',
         value: 'lul',
+        selected: field === 'lul'
       },
       {
         name: 'Pod Bytovkama',
         value: 'nasyp',
+        selected: field === 'nasyp'
       },
       {
         name: 'Pod Silnicí Komořany',
         value: 'cesta',
+        selected: field === 'cesta'
       },
       {
         name: 'Kroužecko',
         value: 'kruzecko',
+        selected: field === 'kruzecko'
       },
       {
         name: 'Pod Silnicí Lysovice',
         value: 'lysovice',
+        selected: field === 'lysovice'
       },
       {
         name: 'Volkramy od Pratlosu',
         value: 'orchard',
+        selected: field === 'orchard'
       },
       {
         name: 'Peitlovo',
         value: 'peitlovo',
+        selected: field === 'peitlovo'
       },
       {
         name: 'Za Školou Tučapy',
         value: 'za_skolou',
+        selected: field === 'za_skolou'
       }
     ],
     action: 'activate',
